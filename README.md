@@ -13,9 +13,6 @@ A modern, responsive weather application built with React, TypeScript, and Tailw
 - **Temperature Units** - Toggle between Celsius and Fahrenheit
 - **Dynamic Backgrounds** - Weather-responsive gradient themes
 - **Responsive Design** - Optimized for mobile, tablet, and desktop
-- **Offline-Ready** - Graceful error handling and retry mechanisms
-- **No API Key Required** - Uses free Open-Meteo API
-
 
 ## 🛠️ Tech Stack
 
