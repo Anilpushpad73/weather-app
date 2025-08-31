@@ -23,8 +23,6 @@ A modern, responsive weather application built with React, TypeScript, and Tailw
 - **Weather API**: Open-Meteo (free, no API key required)
 - **Geocoding**: Open-Meteo Geocoding API
 
-## 📱 Screenshots
-
 ### Desktop View
 - Clean, modern interface with glass-morphism effects
 - Dynamic backgrounds that change based on weather conditions
@@ -161,34 +159,6 @@ src/
 - Memoized components to prevent unnecessary re-renders
 - Lazy loading for forecast components
 - Optimized bundle size with tree shaking
-
-## 🔮 Future Enhancements
-
-### Short Term
-- [ ] Add weather alerts and notifications
-- [ ] Implement location favorites
-- [ ] Add weather radar maps
-- [ ] Include air quality index
-
-### Medium Term
-- [ ] Progressive Web App (PWA) features
-- [ ] Offline functionality
-- [ ] Push notifications for weather updates
-- [ ] Historical weather data
-
-### Long Term
-- [ ] Weather widgets for embedding
-- [ ] Social sharing of weather conditions
-- [ ] Weather-based activity recommendations
-- [ ] Integration with calendar apps
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 🙏 Acknowledgments
 
