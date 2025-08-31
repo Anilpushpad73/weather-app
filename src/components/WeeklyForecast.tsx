@@ -37,12 +37,12 @@ export function WeeklyForecast() {
           const visUnit = temperatureUnit === 'celsius' ? 'km/h' : 'mph';
           
           return (
-            <div 
-              key={index} 
-              className="flex items-center justify-between p-4 bg-white/10 rounded-2xl hover:bg-white/20 transition-all duration-100 hover:scale-[1.02]"
+            <div
+              key={index}
+              className="flex flex-col sm:flex-row items-center justify-between p-4 bg-white/10 rounded-2xl hover:bg-white/20 transition-all duration-100 hover:scale-[1.02] gap-4"
             >
-              <div className="flex items-center gap-4">
-                <div className="text-white font-medium min-w-[80px]">
+              <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+                <div className="text-white font-medium min-w-[80px] text-center sm:text-left">
                   {formatDate(day.date)}
                 </div>
                 <img 
@@ -50,7 +50,7 @@ export function WeeklyForecast() {
                   alt={day.day.condition.text}
                   className="w-12 h-12"
                 />
-                <div className="flex-1">
+                <div className="flex-1 text-center sm:text-left">
                   <p className="text-white text-sm">{day.day.condition.text}</p>
                   {day.day.daily_chance_of_rain > 0 && (
                     <p className="text-white/60 text-xs">
@@ -59,17 +59,17 @@ export function WeeklyForecast() {
                   )}
                 </div>
               </div>
-              
-              <div className="flex items-center gap-4 text-right">
-                <div className="text-white/60 text-sm">
+
+              <div className="flex flex-row sm:flex-col items-center sm:items-end gap-4 text-right w-full sm:w-auto justify-between">
+                <div className="text-white/60 text-sm flex flex-col items-center sm:items-end">
                   <div>💧 {day.day.avghumidity}%</div>
                   <div>💨 {Math.round(windSpeed)} {visUnit}</div>
                 </div>
-                <div className="text-white">
+                <div className="text-white flex flex-col items-center sm:items-end">
                   <span className="font-semibold text-lg">
                     {Math.round(maxTemp)}{tempUnit}
                   </span>
-                  <span className="text-white/70 ml-2">
+                  <span className="text-white/70 ml-0 sm:ml-2">
                     {Math.round(minTemp)}{tempUnit}
                   </span>
                 </div>
